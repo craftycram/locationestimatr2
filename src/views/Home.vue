@@ -91,42 +91,6 @@
         <v-snackbar v-model="snack">{{ snackText }}
             <v-btn color="primary" text @click="snack = false">Close</v-btn>
         </v-snackbar>
-        <v-footer absolute padless class="footer" v-if="$route.path==='/' && showFooter">
-            <v-card flat tile width="100%">
-                <v-card-text class="white--text bottom-row">
-                    <span class="made-by">Made by <a rel="noreferrer" href="https://github.com/ruurdbijlsma"
-                                                     target="_blank">Ruurd Bijlsma</a></span>
-                    <div class="buttons">
-                        <v-btn outlined class="gh-button" rel="noreferrer"
-                               href="https://github.com/ruurdbijlsma/locationestimatr2"
-                               target="_blank">View on Github
-                        </v-btn>
-                        <v-btn outlined class="gh-button" rel="noreferrer"
-                               href="https://reddit.com/r/locationestimatr"
-                               target="_blank">Subreddit
-                        </v-btn>
-                        <!--                        <v-dialog v-model="dialog" width="500">-->
-                        <!--                            <template v-slot:activator="{ on }">-->
-                        <!--                                <v-btn outlined v-on="on">Write Feedback</v-btn>-->
-                        <!--                            </template>-->
-                        <!--                            <v-card :loading="loadingFeedback">-->
-                        <!--                                <v-card-title primary-title> Feedback</v-card-title>-->
-                        <!--                                <v-card-subtitle>Write feedback or report bugs below. (No user data is sent)-->
-                        <!--                                </v-card-subtitle>-->
-                        <!--                                <v-card-text>-->
-                        <!--                                    <v-textarea v-model="feedback"></v-textarea>-->
-                        <!--                                </v-card-text>-->
-                        <!--                                <v-divider></v-divider>-->
-                        <!--                                <v-card-actions>-->
-                        <!--                                    <v-spacer></v-spacer>-->
-                        <!--                                    <v-btn color="primary" text @click="sendFeedback">Send Feedback</v-btn>-->
-                        <!--                                </v-card-actions>-->
-                        <!--                            </v-card>-->
-                        <!--                        </v-dialog>-->
-                    </div>
-                </v-card-text>
-            </v-card>
-        </v-footer>
         <div class="bottom-content">
             <v-bottom-navigation
                     shift
